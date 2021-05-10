@@ -1,0 +1,117 @@
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "kumbh sans";
+    font-size: 18px;
+}
+section{
+    background-color: var(--dark-cyan);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.card{
+    background: white;
+    border-radius: 20px;
+    max-width: 355px;
+    position: relative;
+}
+.card-head{
+    background-size: cover;
+}
+.card-head img{
+    border-radius: 20px 20px 0 0;
+}
+.card-body{
+    border-bottom: 1px solid rgb(216, 216, 216);
+}
+.card-body span{
+    color: var(--dark-gray);
+    font-weight: 400;
+}
+.card-body-bottom{
+    color: var(--dark-gray);
+    margin: 10px auto 20px auto;
+    font-size: 0.9rem;
+}
+.card-body img{
+    width: 110px;
+    height: 110px;
+    margin: -55px auto 30px auto;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+.card-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 25px;
+}
+.card-footer p{
+    margin-top: 5px;
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: var(--dark-gray);
+    letter-spacing: 1px;
+}
+
+
+/* Circle background */
+.circle .c1,
+.circle .c2{
+    position: absolute;
+}
+
+.circle .c1{
+    top: -500px;
+    left: -400px;
+}
+
+.circle .c2{
+    bottom: -700px;
+    right: -300px;
+}
+
+/* atribution */
+.attribution{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    transform: translateY(100%);
+    transition: .4s;
+    background: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.attribution:hover{
+    transform: translateY(0);
+}
+
+.attribution:before{
+    content: '';
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+}
+
+.attribution a{
+    color: var(--dark-grayish-blue);
+}
